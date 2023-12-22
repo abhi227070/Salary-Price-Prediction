@@ -15,12 +15,12 @@ def calculate():
     
     data = request.get_json()
     
-    sex = float(dict(data)['SEX'])
-    designation = float(dict(data)['DESIGNATION'])
-    age = float(dict(data)['AGE'])
-    unit = float(dict(data)['UNIT'])
-    leaves_used = float(dict(data)['LEAVES USED'])
-    leaves_remain = float(dict(data)['LEAVES REMAINING'])
+    sex = str(dict(data)['SEX'])
+    designation = str(dict(data)['DESIGNATION'])
+    age = int(dict(data)['AGE'])
+    unit = str(dict(data)['UNIT'])
+    leaves_used = int(dict(data)['LEAVES USED'])
+    leaves_remain = int(dict(data)['LEAVES REMAINING'])
     rating = float(dict(data)['RATING'])
     past_exp = float(dict(data)['PAST EXP'])
     
