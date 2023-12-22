@@ -25,7 +25,7 @@ def calculate():
     past_exp = float(dict(data)['PAST EXP'])
     
     output = model.predict([[sex,designation,age,unit,leaves_used,leaves_remain,rating,past_exp]])
-    output = np.round(output[0],2)
+    output = float(np.round(output[0],2))
     
     
     return jsonify(output)
